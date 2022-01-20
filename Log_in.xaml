@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfProject.Log_in"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfProject"
+        mc:Ignorable="d"
+        Title="Log in" Width="1000" Height="600" Background="#ffdada">
+    <Grid>
+        <Border MinWidth="400" Margin="15" Background="White" VerticalAlignment="Center" Padding="30" MaxWidth="400" CornerRadius="20">
+            <StackPanel>
+                <TextBlock Text="Log in" FontSize="40" FontFamily="Arial Black" Foreground ="Green" Margin="0 0 0 20"/>
+                <TextBlock Text="Login" FontFamily="Bahnschrift Condensed" FontSize="26"  />
+                <TextBox x:Name="UserLogin1"  Margin="10 0 10 20" FontFamily="Arial" FontSize="20" />
+                <TextBlock Text="Password" FontFamily="Bahnschrift Condensed" FontSize="26" />
+                <PasswordBox x:Name="UserPassword1" Margin="10 0 10 20" FontFamily="Arial" FontSize="20" />
+                <Button x:Name="buttonRegister" Content="Log in" Click="buttonRegister_Click" Foreground="White" Height="30" Background="LightGreen" FontFamily="Arial" FontSize="22"  Margin="15 0 15 20" HorizontalAlignment="Stretch" FontWeight="Bold" />
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="If you haven't signed up yet" FontSize="18" />
+                    <Button Content="Sign up" Foreground="White" Height="35" Background="LightGreen" FontFamily="Arial" FontSize="24"  Margin="15 0 0 0" FontWeight="Bold" FontStyle="Normal" Width="91" Click="Button_Click" />
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
